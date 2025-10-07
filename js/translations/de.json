@@ -1,0 +1,63 @@
+{
+  "page_title": "NAJANAM - Tamilisches Modegeschäft in der Schweiz",
+  "meta_description": "NAJANAM bietet traditionelle tamilische Kleidung, Maßanfertigung, Schmuck und RIA-Geldtransfer in der Schweiz. Besuchen Sie unser Geschäft oder kontaktieren Sie uns online.",
+  
+  "nav_home": "Startseite",
+  "nav_products": "Produkte & Services",
+  "nav_about": "Über uns",
+  "nav_gallery": "Galerie",
+  "nav_contact": "Kontakt",
+  
+  "hero_welcome": "Willkommen bei NAJANAM",
+  "hero_subtitle": "Ihr Spezialgeschäft für traditionelle tamilische Mode, Schmuck und Maßanfertigung in der Schweiz",
+  "hero_cta": "Unsere Produkte entdecken",
+  
+  "features_title": "Unsere Angebote",
+  "features_subtitle": "Entdecken Sie unsere vielfältigen Produkte und Services",
+  "feature_traditional_clothes": "Traditionelle Mode",
+  "feature_traditional_desc": "Hochwertige tamilische Kleidung wie Sari, Churidar und Lehengas in vielfältigen Designs und Farben.",
+  "feature_tailor": "Maßanfertigung & Nähservice",
+  "feature_tailor_desc": "Individuelle Maßanfertigungen und professionelle Änderungen für den perfekten Sitz.",
+  "feature_jewelry": "Schmuck",
+  "feature_jewelry_desc": "Exquisiter Schmuck für jede Gelegenheit - von alltäglichen Accessoires bis zu festlichem Brautschmuck.",
+  "feature_ria": "RIA-Geldtransfer",
+  "feature_ria_desc": "Schneller und zuverlässiger Geldtransfer-Service für internationale Überweisungen.",
+  
+  "about_title": "Tradition trifft auf Moderne",
+  "about_p1": "Seit 2010 führen wir unser Familienunternehmen mit Leidenschaft und Hingabe in der Schweiz. Bei NAJANAM verbinden wir traditionelles tamilisches Handwerk mit modernem Design und hochwertigen Materialien.",
+  "about_p2": "Unser Ziel ist es, die Schönheit und Eleganz der tamilischen Kultur durch unsere sorgfältig ausgewählten Produkte zu bewahren und zu teilen.",
+  "about_cta": "Mehr über uns erfahren",
+  
+  "products_title": "Unsere Bestseller",
+  "products_subtitle": "Entdecken Sie einen Ausschnitt aus unserem vielfältigen Sortiment",
+  "product_sari": "Eleganter Sari",
+  "product_sari_desc": "Traditioneller Sari in Blau mit goldenen Verzierungen",
+  "product_churidar": "Churidar Set",
+  "product_churidar_desc": "Modernes Churidar Set in festlichen Farben",
+  "product_jewelry": "Brautschmuck",
+  "product_jewelry_desc": "Handgefertigtes Schmuckset für besondere Anlässe",
+  "products_cta": "Alle Produkte ansehen",
+  
+  "testimonials_title": "Kundenstimmen",
+  "testimonial_quote": "NAJANAM hat für meine Hochzeit einen wunderschönen Sari maßgeschneidert. Die Qualität und der Service waren hervorragend. Ich habe viele Komplimente für mein Outfit erhalten!",
+  "testimonial_author": "Priya M.",
+  "testimonial_location": "Zürich",
+  
+  "cta_title": "Bereit, uns zu besuchen?",
+  "cta_subtitle": "Wir freuen uns darauf, Sie in unserem Geschäft zu begrüßen oder Ihre Anfrage entgegenzunehmen",
+  "cta_button": "Jetzt Kontakt aufnehmen",
+  
+  "footer_tagline": "Ihre Adresse für tamilische Mode in der Schweiz",
+  "footer_quicklinks": "Schnelllinks",
+  "footer_contact": "Kontakt",
+  "footer_follow": "Folgen Sie uns",
+  "footer_copyright": "© 2025 NAJANAM. Alle Rechte vorbehalten.",
+  
+  "errors": {
+    "name_required": "Bitte geben Sie Ihren Namen ein",
+    "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "message_required": "Bitte geben Sie eine Nachricht ein",
+    "privacy_required": "Bitte stimmen Sie den Datenschutzbestimmungen zu",
+    "form_success": "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet."
+  }
+}
