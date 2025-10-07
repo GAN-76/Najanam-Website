@@ -603,6 +603,40 @@ nav ul.main-menu li a:hover::after {
     overflow: hidden;
     box-shadow: 0 15px 40px rgba(74, 14, 80, 0.15);
     margin-bottom: 50px;
+    height: 500px;
+    width: 100%;
+}
+
+.map-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.map-button {
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.map-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+}
+
+.map-button i {
+    font-size: 1.1rem;
 }
 
 .directions {
@@ -1701,5 +1735,14 @@ footer {
     
     .detail-header h2 {
         font-size: 2rem;
+    }
+    
+    .map-container {
+        height: 350px;
+    }
+    
+    .map-button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
     }
 }
