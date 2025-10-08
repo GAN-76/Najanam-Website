@@ -71,7 +71,7 @@ function initMap() {
         infoWindow.open(map, marker);
     });
 
-    // Info-Fenster standardmäßig öffnen
+    // Info-Fenster standardmässig öffnen
     infoWindow.open(map, marker);
 
     // Directions Service initialisieren
@@ -154,7 +154,7 @@ function handleLocationError(browserHasGeolocation) {
     alert(errorMessage + "\n\nSie können die Route auch direkt in Google Maps öffnen, indem Sie auf den Marker klicken.");
 }
 
-// Map bei Fenstergrößenänderung neu zentrieren
+// Map bei Fenstergrössenänderung neu zentrieren
 window.addEventListener('resize', () => {
     if (map) {
         map.setCenter(najanamLocation);

@@ -260,7 +260,7 @@
 Nach Analytics-Installation:
 
 - [ ] Echtzeit-Bericht öffnen → Eigenen Besuch sehen
-- [ ] Eigene IP ausschließen (Einstellungen > Datenfilter)
+- [ ] Eigene IP ausschliessen (Einstellungen > Datenfilter)
 - [ ] Conversions markieren (phone_call, whatsapp_click, etc.)
 - [ ] Custom Dashboard erstellen
 - [ ] Mobile App installieren

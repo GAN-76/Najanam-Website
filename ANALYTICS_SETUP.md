@@ -20,7 +20,7 @@
 ### 3. Unternehmensdetails
 
 1. **Branche**: Einzelhandel > Bekleidung/Mode
-2. **Unternehmensgröße**: Klein (1-10 Mitarbeiter)
+2. **Unternehmensgrösse**: Klein (1-10 Mitarbeiter)
 3. **Verwendungszweck**: 
    - ✅ Kundenverhalten verstehen
    - ✅ Marketingeffektivität messen
@@ -122,7 +122,7 @@ Soll ich das auch einrichten?
 ## 📈 Nächste Schritte nach Setup
 
 ### Woche 1:
-- ✅ Analytics testen (eigene Besuche ausschließen)
+- ✅ Analytics testen (eigene Besuche ausschliessen)
 - ✅ Erste Daten sammeln
 - ✅ Dashboard einrichten
 
@@ -146,7 +146,7 @@ Soll ich das auch einrichten?
 **Lösung**: Warten Sie 24-48 Stunden nach Installation
 
 **Problem**: Eigene Besuche werden gezählt  
-**Lösung**: IP-Adresse in GA4 ausschließen (Einstellungen > Datenfilter)
+**Lösung**: IP-Adresse in GA4 ausschliessen (Einstellungen > Datenfilter)
 
 **Problem**: Events werden nicht getrackt  
 **Lösung**: Browser-Konsole öffnen (F12) und auf Fehler prüfen
