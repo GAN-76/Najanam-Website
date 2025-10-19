@@ -1746,3 +1746,92 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* ========== Legal Pages (Impressum & Datenschutz) ========== */
+.legal-content {
+    background-color: #fff;
+}
+
+.legal-text {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.legal-text h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.legal-text h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.legal-text h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.legal-text p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+.legal-text ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.legal-text ul li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.legal-text a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.legal-text a:hover {
+    color: var(--secondary-color);
+}
+
+.legal-text strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.legal-text em {
+    color: #666;
+    font-style: italic;
+}
+
+.legal-update {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: right;
+}
+
+/* Footer Links Styling */
+.footer-bottom a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.footer-bottom a:hover {
+    color: var(--secondary-color);
+}
