@@ -9,6 +9,41 @@ document.addEventListener('DOMContentLoaded', function() {
         mobileToggle.addEventListener('click', function() {
             mainMenu.classList.toggle('active');
             mobileToggle.classList.toggle('active');
+            
+            // ARIA-Attribute aktualisieren
+            const isExpanded = mainMenu.classList.contains('active');
+            mobileToggle.setAttribute('aria-expanded', isExpanded);
+            mobileToggle.setAttribute('aria-label', isExpanded ? 'Menü schließen' : 'Menü öffnen');
+            
+            // Body-Scroll verhindern wenn Menü offen ist
+            if (isExpanded) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Menü schließen beim Klick auf einen Link
+        const menuLinks = mainMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mainMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                mobileToggle.setAttribute('aria-label', 'Menü öffnen');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Menü schließen bei Klick außerhalb
+        document.addEventListener('click', function(event) {
+            if (!mobileToggle.contains(event.target) && !mainMenu.contains(event.target)) {
+                mainMenu.classList.remove('active');
+                mobileToggle.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                mobileToggle.setAttribute('aria-label', 'Menü öffnen');
+                document.body.style.overflow = '';
+            }
         });
     }
     

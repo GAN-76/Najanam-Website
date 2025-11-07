@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum - NAJANAM</title>
-    <meta name="description" content="Impressum von NAJANAM - Rechtliche Informationen und Kontaktdaten.">
+    <meta name="description" content="Impressum von NAJANAM - Ihr tamilisches Modegeschäft in Thun. Rechtliche Informationen, Kontaktdaten und Handelsregistereintrag gemäss Schweizer Recht.">
+    <link rel="canonical" href="https://www.najanam.ch/impressum.html">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Impressum - NAJANAM">
+    <meta property="og:description" content="Rechtliche Informationen von NAJANAM - Tamilisches Modegeschäft in Thun, Schweiz">
+    <meta property="og:image" content="https://www.najanam.ch/images/Najanam_Logo.png">
+    <meta property="og:url" content="https://www.najanam.ch/impressum.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_CH">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cookie-consent.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -17,6 +27,45 @@
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7XV8W0R1B"></script>
     <script src="js/analytics.js"></script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "NAJANAM",
+      "image": "https://www.najanam.ch/images/Najanam_Logo.png",
+      "@id": "https://www.najanam.ch",
+      "url": "https://www.najanam.ch",
+      "telephone": "+41782287019",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Schulstrasse 18",
+        "addressLocality": "Thun",
+        "postalCode": "3604",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.758202,
+        "longitude": 7.628202
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "14:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/najanam_2025"
+      ],
+      "vatID": "CHE-479.963.573",
+      "taxID": "CHE-479.963.573 MWST"
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -37,11 +86,11 @@
                         <li><a href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </nav>
-                <div class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </header>
@@ -138,15 +187,15 @@
                 </div>
                 <div class="footer-contact">
                     <h4>Kontakt</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Schulstrasse 18, 3604 Thun</p>
-                    <p><i class="fas fa-phone"></i> +41 78 228 70 19</p>
-                    <p><i class="fas fa-envelope"></i> info@najanam.ch</p>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Schulstrasse 18, 3604 Thun</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> +41 78 228 70 19</p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> info@najanam.ch</p>
                 </div>
                 <div class="footer-social">
                     <h4>Folgen Sie uns</h4>
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/najanam_2025" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/41782287019" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/najanam_2025" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/41782287019" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -155,11 +204,12 @@
             </div>
         </div>
         <!-- WhatsApp Button -->
-        <a href="https://wa.me/41782287019" class="whatsapp-button" target="_blank">
+        <a href="https://wa.me/41782287019" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Kontakt">
             <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/cookie-consent.js"></script>
 </body>
 </html>

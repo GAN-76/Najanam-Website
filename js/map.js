@@ -50,8 +50,7 @@ function initMap() {
             <p style="margin: 5px 0; font-size: 14px;"><strong>Adresse:</strong><br>Schulstrasse 18<br>3604 Thun, Schweiz</p>
             <p style="margin: 5px 0; font-size: 14px;"><strong>Telefon:</strong><br><a href="tel:+41782287019">078 228 70 19</a></p>
             <p style="margin: 5px 0; font-size: 14px;"><strong>Öffnungszeiten:</strong><br>
-            Di: 14:00 – 18:00<br>
-            Mi-Fr: 10:00 – 11:30, 14:00 – 18:00</p>
+            Di-Fr: 14:00 – 18:00</p>
             <p style="margin: 10px 0 0 0;">
                 <a href="https://www.google.com/maps/dir/?api=1&destination=Schulstrasse+18,+3604+Thun,+Switzerland" 
                    target="_blank" 
