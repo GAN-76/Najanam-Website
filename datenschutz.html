@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datenschutzerklärung - NAJANAM</title>
-    <meta name="description" content="Datenschutzerklärung von NAJANAM - Informationen zum Schutz Ihrer persönlichen Daten.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cookie-consent.css">
+    <meta name="description" content="Datenschutzerklärung von NAJANAM - Erfahren Sie, wie wir Ihre personenbezogenen Daten schützen und verarbeiten. Informationen gemäss Schweizer Datenschutzgesetz.">
+    <link rel="canonical" href="https://najanam.ch/datenschutz.html">
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="Datenschutzerklärung - NAJANAM">
+    <meta property="og:description" content="Informationen zum Schutz Ihrer persönlichen Daten">
+    <meta property="og:image" content="https://najanam.ch/images/Najanam_Logo.png">
+    <meta property="og:url" content="https://najanam.ch/datenschutz.html">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_CH">
+    <!-- Preload kritische Ressourcen -->
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="images/Najanam_Logo.png" as="image">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/cookie-consent.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
     
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7XV8W0R1B"></script>
@@ -36,13 +48,14 @@
                         <li><a href="ueber-uns.html">Über uns</a></li>
                         <li><a href="galerie.html">Galerie</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </nav>
-                <div class="mobile-menu-toggle">
+                <button class="mobile-menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="main-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </header>
@@ -218,6 +231,7 @@
                         <li><a href="ueber-uns.html">Über uns</a></li>
                         <li><a href="galerie.html">Galerie</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
@@ -226,11 +240,21 @@
                     <p><i class="fas fa-phone"></i> +41 78 228 70 19</p>
                     <p><i class="fas fa-envelope"></i> info@najanam.ch</p>
                 </div>
+                <div class="footer-hours">
+                    <h4>Öffnungszeiten</h4>
+                    <p>Montag: Geschlossen</p>
+                    <p>Dienstag: 14:00–18:00</p>
+                    <p>Mittwoch: 14:00–18:00</p>
+                    <p>Donnerstag: 14:00–18:00</p>
+                    <p>Freitag: 14:00–18:00</p>
+                    <p>Samstag: Geschlossen</p>
+                    <p>Sonntag: Geschlossen</p>
+                </div>
                 <div class="footer-social">
                     <h4>Folgen Sie uns</h4>
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/najanam_2025" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.me/41782287019" class="social-icon" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/najanam_2025" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/41782287019" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
@@ -239,12 +263,12 @@
             </div>
         </div>
         <!-- WhatsApp Button -->
-        <a href="https://wa.me/41782287019" class="whatsapp-button" target="_blank">
+        <a href="https://wa.me/41782287019" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Kontakt">
             <i class="fab fa-whatsapp"></i>
         </a>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/cookie-consent.js"></script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/cookie-consent.min.js" defer></script>
 </body>
 </html>

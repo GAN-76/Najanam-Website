@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // ARIA-Attribute aktualisieren
             const isExpanded = mainMenu.classList.contains('active');
             mobileToggle.setAttribute('aria-expanded', isExpanded);
-            mobileToggle.setAttribute('aria-label', isExpanded ? 'Menü schließen' : 'Menü öffnen');
+            mobileToggle.setAttribute('aria-label', isExpanded ? 'Menü schliessen' : 'Menü öffnen');
             
             // Body-Scroll verhindern wenn Menü offen ist
             if (isExpanded) {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        // Menü schließen beim Klick auf einen Link
+        // Menü schliessen beim Klick auf einen Link
         const menuLinks = mainMenu.querySelectorAll('a');
         menuLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Menü schließen bei Klick außerhalb
+        // Menü schliessen bei Klick ausserhalb
         document.addEventListener('click', function(event) {
             if (!mobileToggle.contains(event.target) && !mainMenu.contains(event.target)) {
                 mainMenu.classList.remove('active');
@@ -63,6 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Deutsche Übersetzungen laden
     loadGermanTranslations();
+    
+    // Lazy Loading für Bilder implementieren
+    initLazyLoading();
+    
+    // Hero-Bild mit Intersection Observer optimieren
+    optimizeHeroImage();
 
     // Funktion zum Laden der deutschen Übersetzungen
     function loadGermanTranslations() {
@@ -198,6 +204,120 @@ document.addEventListener('DOMContentLoaded', function() {
                     }, 3000);
                 }
             }
+        });
+    }
+    
+    // Lazy Loading Funktion
+    function initLazyLoading() {
+        // Native Lazy Loading für moderne Browser
+        const images = document.querySelectorAll('img[data-src]');
+        
+        // Prüfen ob Intersection Observer unterstützt wird
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        
+                        // Bild laden
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.removeAttribute('data-src');
+                        }
+                        
+                        // Srcset laden falls vorhanden
+                        if (img.dataset.srcset) {
+                            img.srcset = img.dataset.srcset;
+                            img.removeAttribute('data-srcset');
+                        }
+                        
+                        // Klasse für Fade-in Animation
+                        img.classList.add('lazy-loaded');
+                        
+                        // Observer stoppen für dieses Bild
+                        observer.unobserve(img);
+                    }
+                });
+            }, {
+                rootMargin: '50px 0px', // Bilder 50px vor Sichtbarkeit laden
+                threshold: 0.01
+            });
+            
+            // Alle Bilder mit data-src beobachten
+            images.forEach(img => imageObserver.observe(img));
+            
+            // Auch für Background-Images
+            const bgImages = document.querySelectorAll('[data-bg]');
+            bgImages.forEach(element => {
+                imageObserver.observe(element);
+            });
+        } else {
+            // Fallback für ältere Browser - sofort laden
+            images.forEach(img => {
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                }
+                if (img.dataset.srcset) {
+                    img.srcset = img.dataset.srcset;
+                    img.removeAttribute('data-srcset');
+                }
+            });
+        }
+    }
+    
+    // Hero-Bild Optimierung mit Intersection Observer
+    function optimizeHeroImage() {
+        const hero = document.querySelector('.hero');
+        
+        if (!hero || !('IntersectionObserver' in window)) {
+            return;
+        }
+        
+        // Hero-Section beobachten für Performance-Optimierungen
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Hero ist sichtbar - Parallax aktivieren
+                    hero.classList.add('hero-visible');
+                } else {
+                    // Hero nicht sichtbar - Parallax deaktivieren für Performance
+                    hero.classList.remove('hero-visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        heroObserver.observe(hero);
+    }
+    
+    // FAQ Accordion initialisieren
+    initFAQAccordion();
+    
+    // FAQ Accordion Funktionalität
+    function initFAQAccordion() {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                
+                // Schließe alle anderen offenen Antworten in derselben Kategorie
+                const category = this.closest('.faq-category');
+                const allQuestions = category.querySelectorAll('.faq-question');
+                const allAnswers = category.querySelectorAll('.faq-answer');
+                
+                allQuestions.forEach(q => q.setAttribute('aria-expanded', 'false'));
+                allAnswers.forEach(a => a.classList.remove('active'));
+                
+                // Toggle die aktuelle Antwort
+                if (!isExpanded) {
+                    this.setAttribute('aria-expanded', 'true');
+                    answer.classList.add('active');
+                }
+            });
         });
     }
 });

@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Häufig gestellte Fragen (FAQ) - NAJANAM</title>
     <meta name="description" content="Antworten auf häufig gestellte Fragen zu NAJANAM: Versandservice, Massanfertigung, Öffnungszeiten, Zahlungsmethoden und mehr.">
-    <link rel="canonical" href="https://www.najanam.ch/faq.html">
+    <link rel="canonical" href="https://najanam.ch/faq.html">
+    <!-- Preload kritische Ressourcen -->
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="images/Najanam_Logo.png" as="image">
     
     <!-- OpenGraph Meta Tags -->
     <meta property="og:title" content="FAQ - NAJANAM">
     <meta property="og:description" content="Häufig gestellte Fragen zu unserem tamilischen Modegeschäft in Thun">
-    <meta property="og:image" content="https://www.najanam.ch/images/Najanam_Logo.png">
-    <meta property="og:url" content="https://www.najanam.ch/faq.html">
+    <meta property="og:image" content="https://najanam.ch/images/Najanam_Logo.png">
+    <meta property="og:url" content="https://najanam.ch/faq.html">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_CH">
     
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cookie-consent.css">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAQ - NAJANAM">
+    <meta name="twitter:description" content="Häufig gestellte Fragen zu unserem tamilischen Modegeschäft in Thun">
+    <meta name="twitter:image" content="https://najanam.ch/images/Najanam_Logo.png">
+    
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/cookie-consent.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
     
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7XV8W0R1B"></script>
@@ -56,7 +66,7 @@
           "name": "Welche Zahlungsmethoden akzeptieren Sie?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Wir akzeptieren Bargeld, Kreditkarten, Debitkarten und TWINT."
+            "text": "Wir akzeptieren Bargeld und TWINT."
           }
         },
         {
@@ -109,120 +119,242 @@
     </section>
 
     <!-- FAQ Content -->
-    <section class="legal-content">
+    <section class="faq-content">
         <div class="container">
-            <div class="legal-text">
+            <div class="faq-grid">
                 
-                <h2>📦 Versandservice</h2>
+                <div class="faq-category">
+                    <h2>💸 RIA-Geldtransfer</h2>
                 
-                <h3>Wie funktioniert der Versandservice für Sarees?</h3>
-                <p>Schicken Sie uns Ihre Sarees ganz einfach per Post an:<br>
-                <strong>NAJANAM</strong><br>
-                Schulstrasse 18<br>
-                3604 Thun<br>
-                Schweiz</p>
-                <p>Wir nehmen die gewünschten Anpassungen vor und senden sie Ihnen überall in der Schweiz wieder zurück.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Was ist RIA-Geldtransfer?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>RIA ist ein internationaler Geldtransfer-Service. Sie können bei uns Geld in über 160 Länder senden – schnell, sicher und zu günstigen Gebühren.</p>
+                    </div>
+                </div>
                 
-                <h3>Was kostet der Versand?</h3>
-                <p>Die Versandkosten hängen vom Gewicht und der Grösse des Pakets ab. Kontaktieren Sie uns für eine genaue Kostenschätzung: <a href="tel:+41782287019">078 228 70 19</a></p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Welche Dokumente benötige ich für einen Geldtransfer?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sie benötigen einen gültigen Ausweis (ID oder Pass) und die Daten des Empfängers.</p>
+                    </div>
+                </div>
                 
-                <h3>Wie lange dauert der Versand?</h3>
-                <p>Innerhalb der Schweiz dauert der Versand in der Regel 1-2 Werktage mit der Schweizer Post.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Kann ich auch Geld empfangen?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ja! Bei uns können Sie gegen Voranmeldung auch Geld von RIA beziehen. Kontaktieren Sie uns vorher telefonisch: <a href="tel:+41782287019">078 228 70 19</a></p>
+                    </div>
+                </div>
+                </div>
                 
-                <h2>✂️ Massanfertigung & Änderungen</h2>
+                <div class="faq-category">
+                    <h2>📦 Versandservice</h2>
                 
-                <h3>Wie lange dauert eine Massanfertigung?</h3>
-                <p>Die Dauer hängt vom Umfang der Arbeit ab:</p>
-                <ul>
-                    <li><strong>Einfache Änderungen:</strong> 1-2 Wochen</li>
-                    <li><strong>Saree-Blusen:</strong> 2-3 Wochen</li>
-                    <li><strong>Komplexe Massanfertigungen:</strong> 3-4 Wochen</li>
-                </ul>
-                <p>Kontaktieren Sie uns für eine genaue Zeitangabe für Ihr Projekt.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Wie funktioniert der Versandservice für Sarees?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Schicken Sie uns Ihre Sarees ganz einfach per Post an:<br>
+                        <strong>NAJANAM</strong><br>
+                        Schulstrasse 18<br>
+                        3604 Thun<br>
+                        Schweiz</p>
+                        <p>Wir nehmen die gewünschten Anpassungen vor und senden sie Ihnen überall in der Schweiz wieder zurück.</p>
+                    </div>
+                </div>
                 
-                <h3>Benötige ich einen Termin für Massanfertigungen?</h3>
-                <p>Ein Termin ist nicht zwingend erforderlich, aber empfohlen, um Wartezeiten zu vermeiden. Rufen Sie uns an: <a href="tel:+41782287019">078 228 70 19</a></p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Was kostet der Versand?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Die Versandkosten hängen vom Gewicht und der Grösse des Pakets ab. Kontaktieren Sie uns für eine genaue Kostenschätzung: <a href="tel:+41782287019">078 228 70 19</a></p>
+                    </div>
+                </div>
                 
-                <h3>Kann ich mein eigenes Design mitbringen?</h3>
-                <p>Ja, gerne! Bringen Sie Bilder, Skizzen oder Beispiele mit, und wir setzen Ihre Vorstellungen um.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Wie lange dauert der Versand?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Innerhalb der Schweiz dauert der Versand in der Regel 1-2 Werktage mit der Schweizer Post.</p>
+                    </div>
+                </div>
+                </div>
                 
-                <h2>💎 Schmuck</h2>
+                <div class="faq-category">
+                    <h2>✂️ Massanfertigung & Änderungen</h2>
                 
-                <h3>Kann ich Schmuck mieten?</h3>
-                <p>Ja, alle unsere Schmuckstücke sind auch zur Miete verfügbar. Perfekt für Hochzeiten, Verlobungen und besondere Anlässe.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Wie lange dauert eine Massanfertigung?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Die Dauer hängt vom Umfang der Arbeit ab:</p>
+                        <ul>
+                            <li><strong>Einfache Änderungen:</strong> 1-2 Wochen</li>
+                            <li><strong>Saree-Blusen:</strong> 2-3 Wochen</li>
+                            <li><strong>Komplexe Massanfertigungen:</strong> 3-4 Wochen</li>
+                        </ul>
+                        <p>Kontaktieren Sie uns für eine genaue Zeitangabe für Ihr Projekt.</p>
+                    </div>
+                </div>
                 
-                <h3>Wie funktioniert die Schmuckmiete?</h3>
-                <p>Besuchen Sie uns im Geschäft, wählen Sie Ihren Schmuck aus, und wir vereinbaren die Mietdauer und Konditionen. Eine Kaution ist erforderlich.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Benötige ich einen Termin für Massanfertigungen?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ein Termin ist nicht zwingend erforderlich, aber empfohlen, um Wartezeiten zu vermeiden. Rufen Sie uns an: <a href="tel:+41782287019">078 228 70 19</a></p>
+                    </div>
+                </div>
                 
-                <h3>Welche Schmuckstücke haben Sie?</h3>
-                <p>Wir führen traditionellen tamilischen Schmuck:</p>
-                <ul>
-                    <li>Jimikki, Kammel (Ohrringe)</li>
-                    <li>Halsketten, Aarem, Padakkam</li>
-                    <li>Valaijal, Kammel (Armreifen)</li>
-                    <li>Bridal Sets (Brautschmuck-Komplettsets)</li>
-                </ul>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Kann ich mein eigenes Design mitbringen?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ja, gerne! Bringen Sie Bilder, Skizzen oder Beispiele mit, und wir setzen Ihre Vorstellungen um.</p>
+                    </div>
+                </div>
+                </div>
                 
-                <h2>🕐 Öffnungszeiten & Standort</h2>
+                <div class="faq-category">
+                    <h2>💎 Schmuck</h2>
                 
-                <h3>Wann haben Sie geöffnet?</h3>
-                <p><strong>Öffnungszeiten:</strong></p>
-                <ul>
-                    <li>Montag: Geschlossen</li>
-                    <li>Dienstag: 14:00 – 18:00 Uhr</li>
-                    <li>Mittwoch: 14:00 – 18:00 Uhr</li>
-                    <li>Donnerstag: 14:00 – 18:00 Uhr</li>
-                    <li>Freitag: 14:00 – 18:00 Uhr</li>
-                    <li>Samstag: Geschlossen</li>
-                    <li>Sonntag: Geschlossen</li>
-                </ul>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Kann ich Schmuck mieten?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ja, alle unsere Schmuckstücke sind auch zur Miete verfügbar. Perfekt für Hochzeiten, Verlobungen und besondere Anlässe.</p>
+                    </div>
+                </div>
                 
-                <h3>Wo finde ich Sie?</h3>
-                <p><strong>NAJANAM</strong><br>
-                Schulstrasse 18<br>
-                3604 Thun<br>
-                Schweiz</p>
-                <p>Kostenlose Parkplätze direkt vor dem Geschäft verfügbar.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Wie funktioniert die Schmuckmiete?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Besuchen Sie uns im Geschäft, wählen Sie Ihren Schmuck aus, und wir vereinbaren die Mietdauer und Konditionen. Eine Kaution ist erforderlich.</p>
+                    </div>
+                </div>
                 
-                <h2>💳 Zahlung</h2>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Welche Schmuckstücke haben Sie?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Wir führen traditionellen tamilischen Schmuck:</p>
+                        <ul>
+                            <li>Jimikki, Kammel (Ohrringe)</li>
+                            <li>Halsketten, Aarem, Padakkam</li>
+                            <li>Valaijal, Kammel (Armreifen)</li>
+                            <li>Bridal Sets (Brautschmuck-Komplettsets)</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
                 
-                <h3>Welche Zahlungsmethoden akzeptieren Sie?</h3>
-                <p>Wir akzeptieren:</p>
-                <ul>
-                    <li>Bargeld</li>
-                    <li>Kreditkarten (Visa, Mastercard)</li>
-                    <li>Debitkarten</li>
-                    <li>TWINT</li>
-                </ul>
+                <div class="faq-category">
+                    <h2>🕐 Öffnungszeiten & Standort</h2>
                 
-                <h3>Kann ich online bestellen?</h3>
-                <p>Derzeit bieten wir keinen Online-Shop an. Besuchen Sie uns im Geschäft oder kontaktieren Sie uns telefonisch: <a href="tel:+41782287019">078 228 70 19</a></p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Wann haben Sie geöffnet?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Öffnungszeiten:</strong></p>
+                        <ul>
+                            <li>Montag: Geschlossen</li>
+                            <li>Dienstag: 14:00 – 18:00 Uhr</li>
+                            <li>Mittwoch: 14:00 – 18:00 Uhr</li>
+                            <li>Donnerstag: 14:00 – 18:00 Uhr</li>
+                            <li>Freitag: 14:00 – 18:00 Uhr</li>
+                            <li>Samstag: Geschlossen</li>
+                            <li>Sonntag: Geschlossen</li>
+                        </ul>
+                    </div>
+                </div>
                 
-                <h2>💸 RIA-Geldtransfer</h2>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Wo finde ich Sie?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>NAJANAM</strong><br>
+                        Schulstrasse 18<br>
+                        3604 Thun<br>
+                        Schweiz</p>
+                        <p>Kostenlose Parkplätze direkt vor dem Geschäft verfügbar.</p>
+                    </div>
+                </div>
+                </div>
                 
-                <h3>Was ist RIA-Geldtransfer?</h3>
-                <p>RIA ist ein internationaler Geldtransfer-Service. Sie können bei uns Geld in über 160 Länder senden – schnell, sicher und zu günstigen Gebühren.</p>
+                <div class="faq-category">
+                    <h2>💳 Zahlung</h2>
                 
-                <h3>Welche Dokumente benötige ich für einen Geldtransfer?</h3>
-                <p>Sie benötigen einen gültigen Ausweis (ID oder Pass) und die Daten des Empfängers.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Welche Zahlungsmethoden akzeptieren Sie?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Wir akzeptieren:</p>
+                        <ul>
+                            <li>Bargeld</li>
+                            <li>TWINT</li>
+                        </ul>
+                    </div>
+                </div>
                 
-                <h3>Wie lange dauert ein Geldtransfer?</h3>
-                <p>In den meisten Fällen ist das Geld innerhalb weniger Minuten verfügbar.</p>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Kann ich online bestellen?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Derzeit bieten wir keinen Online-Shop an. Besuchen Sie uns im Geschäft oder kontaktieren Sie uns telefonisch: <a href="tel:+41782287019">078 228 70 19</a></p>
+                    </div>
+                </div>
+                </div>
                 
-                <h2>📞 Kontakt</h2>
+                <div class="faq-category">
+                    <h2>📞 Kontakt</h2>
                 
-                <h3>Wie kann ich Sie erreichen?</h3>
-                <p><strong>Telefon:</strong> <a href="tel:+41782287019">078 228 70 19</a><br>
-                <strong>E-Mail:</strong> <a href="mailto:info@najanam.ch">info@najanam.ch</a><br>
-                <strong>WhatsApp:</strong> <a href="https://wa.me/41782287019" target="_blank" rel="noopener noreferrer">078 228 70 19</a></p>
-                
-                <h3>Sprechen Sie Tamil?</h3>
-                <p>Ja! Wir sprechen Tamil, Deutsch und Englisch.</p>
-                
-                <h2>❓ Weitere Fragen?</h2>
-                <p>Haben Sie eine Frage, die hier nicht beantwortet wurde? Kontaktieren Sie uns gerne:</p>
-                <div style="text-align: center; margin-top: 30px;">
-                    <a href="kontakt.html" class="btn">Kontakt aufnehmen</a>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Wie kann ich Sie erreichen?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p><strong>Telefon:</strong> <a href="tel:+41782287019">078 228 70 19</a><br>
+                        <strong>E-Mail:</strong> <a href="mailto:info@najanam.ch">info@najanam.ch</a><br>
+                        <strong>WhatsApp:</strong> <a href="https://wa.me/41782287019" target="_blank" rel="noopener noreferrer">078 228 70 19</a></p>
+                    </div>
+                </div>
                 </div>
                 
             </div>
@@ -250,6 +382,16 @@
                     <p><i class="fas fa-phone" aria-hidden="true"></i> +41 78 228 70 19</p>
                     <p><i class="fas fa-envelope" aria-hidden="true"></i> info@najanam.ch</p>
                 </div>
+                <div class="footer-hours">
+                    <h4>Öffnungszeiten</h4>
+                    <p>Montag: Geschlossen</p>
+                    <p>Dienstag: 14:00–18:00</p>
+                    <p>Mittwoch: 14:00–18:00</p>
+                    <p>Donnerstag: 14:00–18:00</p>
+                    <p>Freitag: 14:00–18:00</p>
+                    <p>Samstag: Geschlossen</p>
+                    <p>Sonntag: Geschlossen</p>
+                </div>
                 <div class="footer-social">
                     <h4>Folgen Sie uns</h4>
                     <div class="social-icons">
@@ -268,7 +410,7 @@
         </a>
     </footer>
 
-    <script src="js/main.js"></script>
-    <script src="js/cookie-consent.js"></script>
+    <script src="js/main.min.js" defer></script>
+    <script src="js/cookie-consent.min.js" defer></script>
 </body>
 </html>

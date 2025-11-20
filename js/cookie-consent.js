@@ -237,7 +237,7 @@
         if (!consent) {
             // Kein Cookie gesetzt - Banner anzeigen
             createCookieBanner();
-            disableAnalytics(); // Standardmäßig deaktiviert
+            disableAnalytics(); // Standardmässig deaktiviert
         } else if (consent === 'all') {
             // Alle Cookies akzeptiert
             enableAnalytics();
